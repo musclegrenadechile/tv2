@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muscle Grenade | Frase del Día - Pantalla Motivación</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mgBlack: "#0B0F1A",
+            mgCard: "#141A2B",
+            mgPink: "#FF4F81",
+            mgYellow: "#FFD54F",
+            mgOrange: "#FF8C00",
+            mgMint: "#A5F3CF",
+            mgBlue: "#A5D8FF",
+            mgLilac: "#D7B8FF",
+            cream: "#FFF8E1",
+          },
+          fontFamily: {
+            sans: ["Montserrat", "sans-serif"],
+            heading: ["Bebas Neue", "cursive"],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html, body { width:100%; height:100%; margin:0; overflow:hidden; background:#0B0F1A; color:#fff; font-family: Montserrat, sans-serif; }
+    .slides { position:relative; width:100vw; height:100vh; overflow:hidden; }
+    .slide { position:absolute; inset:0; opacity:0; transition: opacity 1.2s ease; display:flex; align-items:center; justify-content:center; padding:64px; }
+    .slide.active { opacity:1; z-index:10; }
+
+    .bg1 { background: radial-gradient(circle at top, #FF4F81, #0B0F1A 60%, #000); }
+    .bg2 { background: linear-gradient(135deg, #0B0F1A, #1B2A4A, #0B0F1A); }
+    .bg3 { background: linear-gradient(135deg, #0B0F1A, #3B1C6D, #0B0F1A); }
+    .bg4 { background: radial-gradient(circle at center, #FF8C00, #0B0F1A 60%, #000); }
+    .bg5 { background: linear-gradient(135deg, #0B0F1A, #141A2B, #0B0F1A); }
+
+    .title { font-family: "Bebas Neue", cursive; letter-spacing: .16em; text-transform: uppercase; text-shadow: 0 8px 22px rgba(0,0,0,.55); }
+    .card { background: rgba(20,26,43,.78); border: 1px solid rgba(255,255,255,.12); border-radius: 28px; box-shadow: 0 18px 40px rgba(0,0,0,.6); backdrop-filter: blur(12px); }
+    .pill { border-radius: 9999px; padding: .45rem 1.1rem; font-weight: 900; letter-spacing:.06em; }
+    .big { font-size: clamp(52px, 6vw, 110px); line-height: 0.95; }
+    .quote { font-size: clamp(22px, 2.2vw, 44px); line-height: 1.15; }
+    .micro { font-size: clamp(18px, 1.6vw, 30px); }
+  </style>
+</head>
+
+<body>
+  <div class="slides">
+
+    <!-- SLIDE 1: FRASE DEL DÍA (larga) -->
+    <section class="slide active bg5">
+      <div class="max-w-6xl w-full">
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="pill bg-mgOrange text-mgBlack">MUSCLE GRENADE</span>
+          <span class="pill bg-mgMint text-mgBlack">MENTALIDAD</span>
+          <span class="pill bg-mgPink text-white">FRASE DEL DÍA</span>
+        </div>
+
+        <h1 class="title big text-cream mb-6">HOY SE ENTRENA IGUAL</h1>
+
+        <div class="card p-10">
+          <p class="quote font-extrabold text-mgYellow">
+            “No necesitas motivación perfecta. Necesitas una decisión.
+            Hoy haces lo mínimo que te acerca a tu meta… y eso ya te pone por delante del que lo dejó para mañana.”
+          </p>
+          <p class="mt-6 micro text-white/85">
+            — Muscle Grenade Mindset
+          </p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="card p-6">
+            <p class="micro text-white/70 font-bold">Mantra</p>
+            <p class="text-3xl font-black text-cream">Constancia &gt; Excusas</p>
+          </div>
+          <div class="card p-6">
+            <p class="micro text-white/70 font-bold">Enfoque</p>
+            <p class="text-3xl font-black text-cream">Una serie más.</p>
+          </div>
+          <div class="card p-6">
+            <p class="micro text-white/70 font-bold">Actitud</p>
+            <p class="text-3xl font-black text-cream">Hazlo con hambre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: RETO DEL DÍA -->
+    <section class="slide bg2">
+      <div class="max-w-6xl w-full text-center">
+        <p class="title text-5xl text-mgLilac mb-4">RETO DEL DÍA</p>
+        <h2 class="title big text-cream mb-8">HOY: 1% MEJOR</h2>
+
+        <div class="card p-10 max-w-5xl mx-auto text-left">
+          <ul class="space-y-5">
+            <li class="quote font-black">✅ 10 MINUTOS DE CAMINATA (SIEMPRE SUMA)</li>
+            <li class="quote font-black">✅ 1 COMIDA MÁS LIMPIA QUE AYER</li>
+            <li class="quote font-black">✅ 1 EJERCICIO AL FALLO (CONTROLADO)</li>
+            <li class="quote font-black">✅ 1 LITRO DE AGUA EXTRA</li>
+          </ul>
+
+          <p class="mt-8 micro text-white/80">
+            Pequeñas acciones, resultados gigantes. No es magia: es repetición.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: FRASES CORTAS (punchlines) -->
+    <section class="slide bg3">
+      <div class="max-w-6xl w-full">
+        <div class="flex items-center justify-between mb-6">
+          <span class="pill bg-mgPink text-white">PUNCHLINES</span>
+          <span class="pill bg-mgBlue text-mgBlack">LA DISCIPLINA MANDA</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+          <div class="card p-10">
+            <p class="title text-4xl text-mgYellow mb-3">1</p>
+            <p class="quote font-extrabold">“El dolor pasa. El orgullo se queda.”</p>
+          </div>
+          <div class="card p-10">
+            <p class="title text-4xl text-mgYellow mb-3">2</p>
+            <p class="quote font-extrabold">“No es suerte: es trabajo escondido.”</p>
+          </div>
+          <div class="card p-10">
+            <p class="title text-4xl text-mgYellow mb-3">3</p>
+            <p class="quote font-extrabold">“Cuando no tengas ganas, igual hazlo.”</p>
+          </div>
+          <div class="card p-10">
+            <p class="title text-4xl text-mgYellow mb-3">4</p>
+            <p class="quote font-extrabold">“El cuerpo logra lo que la mente tolera.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: TIPS rápidos (hábitos) -->
+    <section class="slide bg1">
+      <div class="max-w-6xl w-full">
+        <h2 class="title big text-cream text-center mb-10">HÁBITOS QUE GANAN</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <div class="card p-8">
+            <p class="title text-4xl text-mgMint mb-3">HIDRATACIÓN</p>
+            <p class="quote font-bold">Agua antes, durante y después. La energía se construye.</p>
+          </div>
+          <div class="card p-8">
+            <p class="title text-4xl text-mgMint mb-3">PROTEÍNA</p>
+            <p class="quote font-bold">Cada comida suma. El músculo no aparece por accidente.</p>
+          </div>
+          <div class="card p-8">
+            <p class="title text-4xl text-mgMint mb-3">SUEÑO</p>
+            <p class="quote font-bold">Dormir es parte del entrenamiento. Recupera para rendir.</p>
+          </div>
+        </div>
+
+        <p class="mt-10 text-center text-3xl font-black text-mgYellow">
+          “Hazlo por el tú de mañana.”
+        </p>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: cierre marca -->
+    <section class="slide bg4">
+      <div class="max-w-6xl w-full text-center">
+        <p class="title text-5xl text-mgYellow tracking-[0.35em] mb-4">MINDSET</p>
+        <h2 class="title big text-cream mb-6">MUSCLE GRENADE</h2>
+
+        <div class="card p-10 max-w-5xl mx-auto">
+          <p class="quote font-extrabold text-white">
+            “No compitas con otros. Compite con tu versión de ayer.
+            Hoy es un buen día para ganar.”
+          </p>
+
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <span class="pill bg-mgOrange text-mgBlack">FUERZA</span>
+            <span class="pill bg-mgMint text-mgBlack">DISCIPLINA</span>
+            <span class="pill bg-mgPink text-white">MENTALIDAD</span>
+          </div>
+
+          <p class="mt-8 text-2xl font-semibold text-white/85">
+            Pregunta en el mesón por el “Combo del día” 💪
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let i = 0;
+    const intervalMs = 9000;
+
+    function show(idx){
+      slides.forEach(s => s.classList.remove("active"));
+      slides[idx].classList.add("active");
+    }
+
+    show(i);
+    setInterval(() => {
+      i = (i + 1) % slides.length;
+      show(i);
+    }, intervalMs);
+  </script>
+</body>
+</html>
